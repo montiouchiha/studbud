@@ -1,0 +1,20 @@
+{
+  "name": "studbud",
+  "version": "1.0.0",
+  "description": "advanced web project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montiouchiha/studbud.git"
+  },
+  "author": "jordan montgomery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montiouchiha/studbud/issues"
+  },
+  "homepage": "https://github.com/montiouchiha/studbud#readme"
+}
