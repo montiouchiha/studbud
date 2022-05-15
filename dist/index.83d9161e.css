@@ -1,3 +1,15 @@
+.nav {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin: auto;
+  padding: auto;
+  display: grid;
+}
 
+.navbox {
+  text-align: center;
+  border: 2px solid #000;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=index.83d9161e.css.map */

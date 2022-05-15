@@ -1,0 +1,93 @@
+#player {
+  height: 45vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.details {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+}
+
+.track-art {
+  height: 150px;
+  width: 150px;
+  background-image: url("https://source.unsplash.com/Qrspubmx6kE/640x360");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15%;
+  margin: 25px;
+}
+
+.now-playing, .track-name, .track-artist {
+  font-size: 1rem;
+}
+
+.buttons {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.playpause-track, .prev-track, .next-track {
+  opacity: .8;
+  padding: 25px;
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.seek_slider, .volume_slider {
+  appearance: none;
+  height: 5px;
+  opacity: .7;
+  -webkit-transition: all .2s;
+  background: #000;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration, i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.d72fd032.css.map */
