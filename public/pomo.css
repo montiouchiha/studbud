@@ -1,0 +1,18 @@
+
+#pomomins {
+    font-size: 5em;
+}
+#pomosecs {
+    font-size: 2em;
+}
+
+#pomobutton {
+    background: transparent;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+#pomobutton:hover {
+    text-decoration:underline;
+}

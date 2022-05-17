@@ -3,29 +3,31 @@
   color: #000;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
   display: grid;
 }
 
-h3 {
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.6rem;
-  font-weight: 100;
+#hours, #mins, #secs {
+  font-size: 3em;
 }
 
-#seconds, #tens {
-  font-size: 2em;
+.timernum {
+  background-color: #0000;
+  border: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .button-timer {
-  width: 100px;
-  height: 50px;
+  width: 1fr;
+  height: 1fr;
   color: #000;
   background: none;
   border: none;
   outline: none;
+  margin: 0;
+  padding: 10px;
 }
 
 .button-timer:hover {

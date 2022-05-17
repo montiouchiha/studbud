@@ -1,44 +1,52 @@
-var seconds = 00;
-var tens = 00;
-var appendTens = document.getElementById("tens");
-var appendSeconds = document.getElementById("seconds");
+var hours = 00;
+var mins = 00;
+var secs = 00;
+var appendHours = document.getElementById("hours");
+var appendMins = document.getElementById("mins");
+var appendSecs = document.getElementById("secs");
 var buttonStart = document.getElementById("button-start");
 var buttonStop = document.getElementById("button-stop");
 var buttonReset = document.getElementById("button-reset");
 var interval;
 
 function startTimer(){
-    tens++;
-    if (tens < 9){
-        appendTens.innerHTML = "0" + tens;
+    secs++;
+    if (secs <= 9){
+        appendSecs.innerHTML = "0" + secs;
     }
-    if (tens > 9){
-        appendTens.innerHTML = tens;
+    if (secs > 9){
+        appendSecs.innerHTML = secs;
     }
-    if (tens > 99){
-        seconds++;
-        appendSeconds.innerHTML = "0" + seconds;
-        tens = 0;
-        appendTens.innerHTML = "0" + 0;
+    if (secs > 59){
+        mins++;
+        appendMins.innerHTML = "0" + mins;
+        secs = 0;
+        appendSecs.innerHTML = "0" + 0;
     }
-    if (seconds > 9) {
-        appendSeconds.innerHTML = seconds;
+    if (mins > 9) {
+        appendMins.innerHTML = mins;
+    }
+    if (mins > 59){
+        hours++;
+        appendHours.innerHTML = "0" + hours;
+        mins = 0;
+        appendMins.innerHTML = "0" + 0;
     }
 }
 
-buttonStart.oneclick = function(){
-    interval = setInverval(startTimer);
-    console.log("working yessss")
+buttonStart.onclick = function(){
+    interval = setInterval(startTimer, +1000);
 };
 
-buttonStop.oneclick = function(){
+buttonStop.onclick = function(){
    clearInterval(interval);
 };
 
 buttonReset.onclick = function (){
     clearInterval(interval);
-    tens = "00";
-    seconds = "00";
-    appendSeconds.innerHTML = seconds;
-    appendTens.innerHTML = tens;
+    secs = "00";
+    mins = "00";
+    hours = "00";
+    appendSecs.innerHTML = secs;
+    appendMins.innerHTML = mins;
 };

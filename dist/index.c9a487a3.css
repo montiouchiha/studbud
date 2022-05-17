@@ -1,0 +1,20 @@
+#pomomins {
+  font-size: 5em;
+}
+
+#pomosecs {
+  font-size: 2em;
+}
+
+#pomobutton {
+  color: #000;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#pomobutton:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=index.c9a487a3.css.map */

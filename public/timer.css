@@ -4,28 +4,35 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
-h3 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 2.6rem;
-    text-transform: capitalize;
-
+#hours {
+    font-size: 3em;
+}
+#mins {
+    font-size: 3em;
+}
+#secs {
+    font-size: 3em;
 }
 
-#seconds,
-#tens {
-    font-size: 2em;
+.timernum {
+    margin: 0;
+    padding: 0;
+    border: black;
+    background-color: transparent;
 }
+
 .button-timer {
-    width: 100px;
-    height: 50px;
+    width: 1fr;
+    height: 1fr;
     background: transparent;
     color: black;
     border: none;
+    margin: 0;
+    padding: 10px;
     outline: none;
 }
 
