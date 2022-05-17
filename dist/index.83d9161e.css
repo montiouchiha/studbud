@@ -5,7 +5,7 @@
 
 .navbar {
   border: 0;
-  grid-template-columns: 3fr 3fr 1fr 3fr 1fr 2fr 3fr;
+  grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1fr 3fr;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -33,7 +33,6 @@
 }
 
 #c6 {
-  width: 100%;
   float: center;
   border: 2px solid #000;
   border-right: 0;

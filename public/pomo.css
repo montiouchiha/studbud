@@ -1,18 +1,30 @@
+/*things to do tonight: finish pomo w/o styling*/
 
-#pomomins {
-    font-size: 5em;
+#pomocontainer1 {
+    text-align: right;
+    padding-right: 0;
+    margin: 0;
 }
-#pomosecs {
-    font-size: 2em;
+
+#pomoeditbutton {
+    width: 2.5rem;
+    height: 1.3rem;
+    background-color: transparent;
+    border: none;
+}
+
+#pomocontainer2 {
+    padding: 0;
+    margin: 0;
 }
 
 #pomobutton {
-    background: transparent;
-    color: black;
+    background-color: transparent;
     border: none;
-    outline: none;
 }
 
-#pomobutton:hover {
-    text-decoration:underline;
+#pomomins {
+    font-size: 3em;
 }
+#pomosecs {
+    font-size: 2em;

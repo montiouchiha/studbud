@@ -1,20 +1,32 @@
+#pomocontainer1 {
+  text-align: right;
+  margin: 0;
+  padding-right: 0;
+}
+
+#pomoeditbutton {
+  width: 2.5rem;
+  height: 1.3rem;
+  background-color: #0000;
+  border: none;
+}
+
+#pomocontainer2 {
+  margin: 0;
+  padding: 0;
+}
+
+#pomobutton {
+  background-color: #0000;
+  border: none;
+}
+
 #pomomins {
-  font-size: 5em;
+  font-size: 3em;
 }
 
 #pomosecs {
   font-size: 2em;
-}
-
-#pomobutton {
-  color: #000;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-#pomobutton:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.c9a487a3.css.map */
