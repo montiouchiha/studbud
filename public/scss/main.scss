@@ -1,9 +1,10 @@
-@import "_typography.scss";
-@import "_colour.scss";
+@import "base/_typography.scss";
+@import "base/_colour.scss";
 
-@import "_pomo.scss";
-@import "_timer.scss";
+@import "components/_pomo.scss";
+@import "components/_timer.scss";
+@import "components/_logo.scss";
 
-@import "_grid.scss";
-@import "_nav.scss";
-@import "_layout.scss";
+@import "layout/_grid.scss";
+@import "layout/_nav.scss";
+@import "layout/_layout.scss";

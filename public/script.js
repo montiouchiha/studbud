@@ -1,3 +1,5 @@
+//Timer
+
 var hours = 00;
 var mins = 00;
 var secs = 00;
@@ -50,3 +52,22 @@ buttonReset.onclick = function (){
     appendSecs.innerHTML = secs;
     appendMins.innerHTML = mins;
 };
+
+//Pomo Timer
+
+var pomomins = 25;
+var pomosecs = 00;
+var appendPomomins = document.getElementById("pomomins");
+var appendPomosecs = document.getElementById("pomosecs");
+var buttonPomostart = document.getElementById("pomoeditbutton");
+var interval;
+
+function startPomotimer(){
+    mins--;
+}
+
+//need to fix so it doesnt interfer with timer
+
+buttonStart.onclick = function(){
+    interval = setInterval(startPomotimer);
+}

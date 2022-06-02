@@ -18,22 +18,7 @@
   padding: 0;
 }
 
-.navbox:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#c1 {
-  width: 100%;
-  float: center;
-  background: #2003fc;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
-}
-
-#c2, #c3, #c4, #c5 {
+#c1, #c2, #c3, #c4, #c5 {
   width: 100%;
   float: center;
   border-top: 1px solid #000;

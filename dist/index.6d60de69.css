@@ -1,0 +1,119 @@
+#pomocontainer1 {
+  text-align: right;
+  margin: 0;
+  padding-right: 0;
+}
+
+#pomoeditbutton {
+  width: 2.5rem;
+  height: 1.3rem;
+  background-color: #0000;
+  border: none;
+}
+
+#pomocontainer2 {
+  margin: 0;
+  padding: 0;
+}
+
+#pomobutton {
+  background-color: #0000;
+  border: none;
+}
+
+#pomomins {
+  font-size: 3em;
+}
+
+#pomosecs {
+  font-size: 2em;
+}
+
+#timercontainer {
+  text-align: center;
+  color: #000;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin: 0;
+  padding: 0 10px 10px;
+  display: grid;
+}
+
+#hours, #mins, #secs {
+  font-size: 3em;
+}
+
+.timernum {
+  background-color: #0000;
+  border: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.button-timer {
+  width: 1fr;
+  height: 1fr;
+  color: #000;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.button-timer:hover {
+  text-decoration: underline;
+}
+
+#button-start, #button-stop, #button-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: -ms-grid;
+  -ms-grid-columns: 3fr 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr;
+  border: 0;
+  grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.navbox {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#c1, #c2, #c3, #c4, #c5 {
+  width: 100%;
+  float: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+#c6 {
+  float: center;
+  border: 1px solid #000;
+  border-right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#c7 {
+  width: 100%;
+  float: center;
+  border: 1px solid #000;
+}
+
+.html {
+  cursor: crosshair;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=index.6d60de69.css.map */
