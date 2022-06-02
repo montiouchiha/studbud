@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>STUDBUD</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="timer.css" rel="stylesheet" type="text/css" />
-    <link href="pomo.css" rel="stylesheet" type="text/css" />
+    <link href="./scss/main.scss" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav class="navbar">
 
-      <h1 class="navbox" id="c1">studbud.</h1>
+      <div class="navbox" id="c1">
+          <object id="logo"><img src="./icons/studbudlogo.svg" alt="studbudlogo" width="250px"></object>
+      </div>
 
       <h1 class="navbox" id="c2">Good morning Jordan</h1>
 
@@ -21,7 +21,7 @@
 
       <div class ="navbox" id="c5">
         <div id="pomocontainer1">
-          <button id="pomoeditbutton"><img src="3dotmenu.svg" alt="3dotmenu" width="100%" height="100%"></button>
+          <button id="pomoeditbutton"><img src="./icons/3dotmenu.svg" alt="3dotmenu" width="100%" height="100%"></button>
         </div>
         <div id="pomocontainer2">
           <button id="pomobutton">
@@ -41,7 +41,6 @@
       </div>
       <h1 class="navbox" id="c7">music player</h1>
     </nav>
-  <script src="pomo.js"></script> 
-  <script src="timer.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
