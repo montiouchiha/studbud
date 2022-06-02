@@ -5,7 +5,7 @@
 
 .navbar {
   border: 0;
-  grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1fr 3fr;
+  grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -24,17 +24,26 @@
   display: table;
 }
 
-#c1, #c2, #c3, #c4, #c5 {
+#c1 {
   width: 100%;
   float: center;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
+  background: #2003fc;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+#c2, #c3, #c4, #c5 {
+  width: 100%;
+  float: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 #c6 {
   float: center;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-right: 0;
   margin: 0;
   padding: 0;
@@ -43,7 +52,7 @@
 #c7 {
   width: 100%;
   float: center;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 /*# sourceMappingURL=index.83d9161e.css.map */

@@ -1,11 +1,14 @@
-#container {
+#timercontainer {
     text-align: center;
     color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
 }
 
 #hours {
@@ -38,4 +41,19 @@
 
 .button-timer:hover {
     text-decoration:underline;
+}
+
+#button-start {
+    padding: 0;
+    margin: 0;
+}
+
+#button-stop {
+    padding: 0;
+    margin: 0;
+}
+
+#button-reset {
+    padding: 0;
+    margin: 0;
 }

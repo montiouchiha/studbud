@@ -1,10 +1,10 @@
-#container {
+#timercontainer {
   text-align: center;
   color: #000;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
   margin: 0;
-  padding: 0;
+  padding: 0 10px 10px;
   display: grid;
 }
 
@@ -32,6 +32,11 @@
 
 .button-timer:hover {
   text-decoration: underline;
+}
+
+#button-start, #button-stop, #button-reset {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=index.dbabbe99.css.map */

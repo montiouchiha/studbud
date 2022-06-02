@@ -5,7 +5,7 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1fr 3fr;
+    grid-template-columns: 3fr 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr;
     gap: 0em;
     margin: 0;
     padding: 0;
@@ -25,43 +25,44 @@
   }
 
 #c1 {
+    background: #2003fc;
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c2 {
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c3 {
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c4 {
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c5 {
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c6 {
@@ -69,16 +70,16 @@
     padding: 0;
     border: 0;
     margin: 0;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #c7 {
     width: 100%;
     float: center;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
