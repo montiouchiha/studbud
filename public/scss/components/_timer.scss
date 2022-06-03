@@ -3,12 +3,17 @@
     color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    gap: 0em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
     padding-top: 0;
+    background: none;
+    border-top: 1px solid black;
+    position: relative;
+    top: 24px;
 }
 
 #hours {
@@ -26,34 +31,35 @@
     padding: 0;
     border: black;
     background-color: transparent;
+    position: relative;
+    top: 17px;
 }
 
-.button-timer {
-    width: 1fr;
-    height: 1fr;
+.buttontimer {
     background: transparent;
     color: black;
     border: none;
     margin: 0;
-    padding: 10px;
     outline: none;
+    padding-top: 8px;
 }
 
-.button-timer:hover {
-    text-decoration:underline;
-}
 
 #button-start {
-    padding: 0;
-    margin: 0;
+    float: center;
+    border-right: 1px solid black;
 }
 
 #button-stop {
-    padding: 0;
-    margin: 0;
+    float: center;
 }
 
 #button-reset {
-    padding: 0;
-    margin: 0;
+    float: center;
+    border-left: 1px solid black;
+}
+
+.icons {
+    position: relative;
+    bottom: 2px;
 }

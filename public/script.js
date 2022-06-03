@@ -55,6 +55,7 @@ buttonReset.onclick = function (){
 
 //Pomo Timer
 
+/*
 var pomomins = 25;
 var pomosecs = 00;
 var appendPomomins = document.getElementById("pomomins");
@@ -71,3 +72,4 @@ function startPomotimer(){
 buttonStart.onclick = function(){
     interval = setInterval(startPomotimer);
 }
+*/

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>STUDBUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="./scss/main.scss" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -13,9 +16,11 @@
           <object id="logo"><img src="./icons/studbudlogo.svg" alt="studbudlogo" width="250px"></object>
       </div>
 
-      <h1 class="navbox" id="c2">Good morning Jordan</h1>
+      <h1 class="navbox" id="c2"><p>Good morning Jordan, it is Monday the 25th of April</p></h1>
 
-      <h1 class="navbox" id="c3">settings</h1>
+      <div class="navbox" id="c3">
+        <button id="coveybutton" type = "button"><img id="coveyimage" src="./icons/coveybuttonon.svg" width="60%"></button>
+      </div>
 
       <h1 class="navbox" id="c4">dictionary</h1>
 
@@ -23,19 +28,20 @@
         <div id="pomocontainer1">
           <button id="pomoeditbutton"><img src="./icons/3dotmenu.svg" alt="3dotmenu" width="100%" height="100%"></button>
         </div>
+        <p id="pomobutton"><span id="pomomins">25</span>:<span id="pomosecs">00</span></p>
         <div id="pomocontainer2">
-          <button id="pomobutton">
-            <span id="pomomins">25</span>:<span id="pomosecs">00</span>
-          </button>
+          <button class="pomobuttontimer" id="pomobutton-start"><img src="./icons/start.svg" alt="pomostart" width="12px"></button>
+          <button class="pomobuttontimer" id="pomobutton-stop"><img src="./icons/stop.svg" alt="pomostart" width="12px"></button>
+          <button class="pomobuttontimer" id="pomobutton-reset"><img src="./icons/reset.svg" alt="pomostart" width="12px"></button>
         </div>
       </div>
 
       <div class="navbox" id="c6">
         <p class="timernum"><span id="hours">00</span> : <span id="mins">00</span> : <span id="secs">00</span></p>
         <div id="timercontainer">
-          <button class="button-timer" id="button-start">START</button>
-          <button class="button-timer" id="button-stop">STOP</button>
-          <button class="button-timer" id="button-reset">RESET</button>
+          <button class="buttontimer" id="button-start"><img class="icons" src="./icons/start.svg" alt="start" width="12px"></button></button>
+          <button class="buttontimer" id="button-stop"><img class="icons" src="./icons/stop.svg" alt="start" width="12px"></button></button>
+          <button class="buttontimer" id="button-reset"><img class="icons" src="./icons/reset.svg" alt="start" width="12px"></button></button>
         </div>
 
       </div>
@@ -44,3 +50,4 @@
   <script src="script.js"></script>
   </body>
 </html>
+

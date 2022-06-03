@@ -6,23 +6,73 @@
 #pomoeditbutton {
     width: 2.5rem;
     height: 1.3rem;
-    background-color: transparent;
+    background: none;
     border: none;
 }
 
 #pomocontainer2 {
-    padding: 0;
+    text-align: center;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0;
+    background: none;
+    border-top: 1px solid black;
 }
 
 #pomobutton {
-    background-color: transparent;
+    background-color: none;
     border: none;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 7px;
 }
 
 #pomomins {
     font-size: 3em;
+    padding: 0;
+    margin: 0;
 }
 #pomosecs {
-    font-size: 2em;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+.pomobuttontimer {
+    background: none;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+#pomobutton-start {
+    float: center;
+    border-right: 1px solid black;
+}
+
+#pomobutton-stop {
+    float: center;
+}
+
+#pomobutton-reset {
+    float: center;
+    border-left: 1px solid black;
+}
+
+#parent {
+    position: relative;
+  }
+
+#child {
+    position: absolute;
 }

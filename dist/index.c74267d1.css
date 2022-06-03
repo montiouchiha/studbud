@@ -1,3 +1,11 @@
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
 #pomocontainer1 {
   text-align: right;
   padding-right: 0;
@@ -6,36 +14,80 @@
 #pomoeditbutton {
   width: 2.5rem;
   height: 1.3rem;
-  background-color: #0000;
+  background: none;
   border: none;
 }
 
 #pomocontainer2 {
+  text-align: center;
+  color: #000;
+  background: none;
+  border-top: 1px solid #000;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
   margin: 0;
   padding: 0;
+  display: grid;
 }
 
 #pomobutton {
-  background-color: #0000;
+  background-color: none;
   border: none;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 7px;
 }
 
-#pomomins {
+#pomomins, #pomosecs {
+  margin: 0;
+  padding: 0;
   font-size: 3em;
 }
 
-#pomosecs {
-  font-size: 2em;
+.pomobuttontimer {
+  background: none;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+#pomobutton-start {
+  float: center;
+  border-right: 1px solid #000;
+}
+
+#pomobutton-stop {
+  float: center;
+}
+
+#pomobutton-reset {
+  float: center;
+  border-left: 1px solid #000;
+}
+
+#parent {
+  position: relative;
+}
+
+#child {
+  position: absolute;
 }
 
 #timercontainer {
   text-align: center;
   color: #000;
+  background: none;
+  border-top: 1px solid #000;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-  margin: 0;
-  padding: 0 10px 10px;
+  gap: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   display: grid;
+  position: relative;
+  top: 24px;
 }
 
 #hours, #mins, #secs {
@@ -47,40 +99,61 @@
   border: #000;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: 17px;
 }
 
-.button-timer {
-  width: 1fr;
-  height: 1fr;
+.buttontimer {
   color: #000;
   background: none;
   border: none;
   outline: none;
   margin: 0;
-  padding: 10px;
+  padding-top: 8px;
 }
 
-.button-timer:hover {
-  text-decoration: underline;
+#button-start {
+  float: center;
+  border-right: 1px solid #000;
 }
 
-#button-start, #button-stop, #button-reset {
-  margin: 0;
-  padding: 0;
+#button-stop {
+  float: center;
+}
+
+#button-reset {
+  float: center;
+  border-left: 1px solid #000;
+}
+
+.icons {
+  position: relative;
+  bottom: 2px;
 }
 
 #logo {
   justify-content: center;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-left: 0;
   padding-right: 0;
   display: flex;
 }
 
+#coveybutton {
+  background: none;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+#coveybutton:focus {
+  background: red;
+}
+
 .navbar {
   border: 0;
-  grid-template-columns: 2.5fr 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr;
+  grid-template-columns: 2.5fr 3fr 1fr 3fr 1fr 2fr 3fr;
   gap: 0;
   margin: 0;
   padding: 0;

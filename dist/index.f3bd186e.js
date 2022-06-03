@@ -40,20 +40,24 @@ buttonReset.onclick = function() {
     hours = "00";
     appendSecs.innerHTML = secs;
     appendMins.innerHTML = mins;
-};
-//Pomo Timer
+}; //Pomo Timer
+ /*
 var pomomins = 25;
 var pomosecs = 00;
 var appendPomomins = document.getElementById("pomomins");
 var appendPomosecs = document.getElementById("pomosecs");
 var buttonPomostart = document.getElementById("pomoeditbutton");
 var interval;
-function startPomotimer() {
+
+function startPomotimer(){
     mins--;
 }
+
 //need to fix so it doesnt interfer with timer
-buttonStart.onclick = function() {
+
+buttonStart.onclick = function(){
     interval = setInterval(startPomotimer);
-};
+}
+*/ 
 
 //# sourceMappingURL=index.f3bd186e.js.map
