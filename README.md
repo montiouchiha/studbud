@@ -18,9 +18,9 @@ Features:
 
     Timer:
 
-    Music Player:
+    Music Player: Spotfiy Link
 
-    Task List:
+    Task List: Rob's
 
 Further Improvements:
 
