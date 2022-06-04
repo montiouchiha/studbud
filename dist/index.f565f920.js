@@ -1,44 +1,45 @@
-var hours = 00;
-var mins = 00;
-var secs = 00;
-var appendHours = document.getElementById("hours");
-var appendMins = document.getElementById("mins");
-var appendSecs = document.getElementById("secs");
-var buttonStart = document.getElementById("button-start");
-var buttonStop = document.getElementById("button-stop");
-var buttonReset = document.getElementById("button-reset");
-var interval;
-function startTimer() {
-    secs++;
-    if (secs <= 9) appendSecs.innerHTML = "0" + secs;
-    if (secs > 9) appendSecs.innerHTML = secs;
-    if (secs > 59) {
-        mins++;
-        appendMins.innerHTML = "0" + mins;
-        secs = 0;
-        appendSecs.innerHTML = "00";
+//Timer
+var timerHours = 00;
+var timerMins = 00;
+var timerSecs = 00;
+var appendTimerHours = document.getElementById("hours");
+var appendTimerMins = document.getElementById("mins");
+var appendTimerSecs = document.getElementById("secs");
+var buttonTimerStart = document.getElementById("button-start");
+var buttonTimerStop = document.getElementById("button-stop");
+var buttonTimerReset = document.getElementById("button-reset");
+var timerInterval;
+function startTimerTimer() {
+    timerSecs++;
+    if (timerSecs <= 9) appendTimerSecs.innerHTML = "0" + timerSecs;
+    if (timerSecs > 9) appendTimerSecs.innerHTML = timerSecs;
+    if (timerSecs > 59) {
+        timerMins++;
+        appendTimerMins.innerHTML = "0" + timerMins;
+        timerSecs = 0;
+        appendTimerSecs.innerHTML = "00";
     }
-    if (mins > 9) appendMins.innerHTML = mins;
-    if (mins > 59) {
-        hours++;
-        appendHours.innerHTML = "0" + hours;
-        mins = 0;
-        appendMins.innerHTML = "00";
+    if (timerMins > 9) appendMins.innerHTML = timerMins;
+    if (timerMins > 59) {
+        timerHours++;
+        appendTimerHours.innerHTML = "0" + timerHours;
+        timerMins = 0;
+        appendTimerMins.innerHTML = "00";
     }
 }
-buttonStart.onclick = function() {
-    interval = setInterval(startTimer, 1000);
+buttonTimerStart.onclick = function() {
+    timerInterval = setInterval(startTimerTimer, 1000);
 };
-buttonStop.onclick = function() {
-    clearInterval(interval);
+buttonTimerStop.onclick = function() {
+    clearInterval(timerInterval);
 };
-buttonReset.onclick = function() {
-    clearInterval(interval);
-    secs = "00";
-    mins = "00";
-    hours = "00";
-    appendSecs.innerHTML = secs;
-    appendMins.innerHTML = mins;
+buttonTimerReset.onclick = function() {
+    clearInterval(timerInterval);
+    timerSecs = "00";
+    timerMins = "00";
+    timerHours = "00";
+    appendTimerSecs.innerHTML = timerSecs;
+    appendTimerMins.innerHTML = timerMins;
 };
 
 //# sourceMappingURL=index.f565f920.js.map

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud - Pomodoro Timer</title>
+</head>
+<body class="body-pomodoro">
+    <h1 class="logo">logo</h1>
+    <a href="/index.html" class="back-button">back</a>
+    <span class="pomodoro-timer-outline"></span>
+    <div class="pomodoro_container">
+        <div class="pomodoro-settings-div">
+            <h3 id="pomodoro-SessSettings">Session Settings</h3>
+            <form class="pomodoro-settings">
+                <label for="NumSess">Number of Sessions:</label>
+                <input type="number" name="NumSess" id="numSessInput" placeholder="Max 3">
+
+                <label for="StudyTime">Each study period (mins):</label>
+                <input type="number" name="StudyTime" id="studyTimeInput" placeholder="25">
+
+                <label for="StudyBreak">Each study break (mins):</label>
+                <input type="number" name="StudyBreak" id="studyBreakInput" placeholder="5">
+        
+                <input type="button" value="set time" id="pomodoro-set-time">
+            </form>
+        </div>
+        <button id="pomodoro-start">Start</button>
+        <h5 id="sessionText">Total Session time (mins):<h5>
+        <h5 id="totalTime">00</h5>
+    </h5></h5></div>
+    <p id="pomodoro-countdown">00:00</p>
+    <script src="/pomo.1bd03311.js"></script>
+</body>
+</html>

@@ -6,73 +6,49 @@ h1 {
   font-weight: 400;
 }
 
-#pomocontainer1 {
-  text-align: right;
-  padding-right: 0;
-}
-
-#pomoeditbutton {
-  width: 2.5rem;
-  height: 1.3rem;
-  background: none;
+.timer__part {
+  text-align: center;
+  background-color: none;
   border: none;
+  margin: 0;
+  font-size: 3em;
+  position: relative;
+  top: 15px;
 }
 
-#pomocontainer2 {
+#pomobuttons {
   text-align: center;
   color: #000;
   background: none;
   border-top: 1px solid #000;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0;
-  margin: 0;
-  padding: 0;
+  margin-top: 26px;
   display: grid;
 }
 
-#pomobutton {
-  background-color: none;
-  border: none;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
-  bottom: 7px;
-}
-
-#pomomins, #pomosecs {
-  margin: 0;
-  padding: 0;
-  font-size: 3em;
-}
-
-.pomobuttontimer {
+.timer__btn {
   background: none;
   border: none;
   padding-top: 5px;
   padding-bottom: 4px;
 }
 
-#pomobutton-start {
+.timer__btn:hover {
+  background: #f5f5f5;
+}
+
+#doubledots {
+  font-size: 1em;
+}
+
+#startbutton {
   float: center;
   border-right: 1px solid #000;
 }
 
-#pomobutton-stop {
+#startpomobutton {
   float: center;
-}
-
-#pomobutton-reset {
-  float: center;
-  border-left: 1px solid #000;
-}
-
-#parent {
-  position: relative;
-}
-
-#child {
-  position: absolute;
 }
 
 #timercontainer {
@@ -87,10 +63,10 @@ h1 {
   padding: 0;
   display: grid;
   position: relative;
-  top: 24px;
+  top: 26px;
 }
 
-#hours, #mins, #secs {
+#hours, #mins, #secs, .doubledots {
   font-size: 3em;
 }
 
@@ -100,7 +76,7 @@ h1 {
   margin: 0;
   padding: 0;
   position: relative;
-  top: 17px;
+  top: 15px;
 }
 
 .buttontimer {
@@ -109,7 +85,11 @@ h1 {
   border: none;
   outline: none;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 7px;
+}
+
+.buttontimer:hover {
+  background: #f5f5f5;
 }
 
 #button-start {
@@ -144,16 +124,16 @@ h1 {
   background: none;
   border: none;
   padding-top: 20px;
-  padding-bottom: 0;
+  padding-bottom: 23px;
 }
 
-#coveybutton:focus {
-  background: red;
+#coveybutton:hover {
+  background: #f5f5f5;
 }
 
 .navbar {
   border: 0;
-  grid-template-columns: 2.5fr 3fr 1fr 3fr 1fr 2fr 3fr;
+  grid-template-columns: 2.5fr 3fr 1fr 3fr 1.5fr 2fr 3fr;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -187,7 +167,6 @@ h1 {
 }
 
 * {
-  cursor: crosshair;
   box-sizing: border-box;
 }
 

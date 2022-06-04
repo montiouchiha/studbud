@@ -13,7 +13,7 @@
     background: none;
     border-top: 1px solid black;
     position: relative;
-    top: 24px;
+    top: 26px;
 }
 
 #hours {
@@ -26,13 +26,17 @@
     font-size: 3em;
 }
 
+.doubledots {
+    font-size: 3em;
+}
+
 .timernum {
     margin: 0;
     padding: 0;
     border: black;
     background-color: transparent;
     position: relative;
-    top: 17px;
+    top: 15px;
 }
 
 .buttontimer {
@@ -41,7 +45,11 @@
     border: none;
     margin: 0;
     outline: none;
-    padding-top: 8px;
+    padding-top: 7px;
+}
+
+.buttontimer:hover {
+    background: #f5f5f5;
 }
 
 

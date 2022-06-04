@@ -22,22 +22,66 @@
         <button id="coveybutton" type = "button"><img id="coveyimage" src="./icons/coveybuttonon.svg" width="60%"></button>
       </div>
 
-      <h1 class="navbox" id="c4">dictionary</h1>
+      <div class="navbox" id="c4">
+        <div class="wrapper">
+          <header>English Dictionary</header>
+          <div class="search">
+            <input type="text" placeholder="Search a word" required spellcheck="false">
+            <i class="fas fa-search"></i>
+            <span class="material-icons">close</span>
+          </div>
+          <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+          <ul>
+            <li class="word">
+              <div class="details">
+                <p>__</p>
+                <span>_ _</span>
+              </div>
+              <i class="fas fa-volume-up"></i>
+            </li>
+            <div class="content">
+              <li class="meaning">
+                <div class="details">
+                  <p>Meaning</p>
+                  <span>___</span>
+                </div>
+              </li>
+              <li class="example">
+                <div class="details">
+                  <p>Example</p>
+                  <span>___</span>
+                </div>
+              </li>
+              <li class="synonyms">
+                <div class="details">
+                  <p>Synonyms</p>
+                  <div class="list"></div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+    
+      </div>
 
       <div class ="navbox" id="c5">
-        <div id="pomocontainer1">
-          <button id="pomoeditbutton"><img src="./icons/3dotmenu.svg" alt="3dotmenu" width="100%" height="100%"></button>
-        </div>
-        <p id="pomobutton"><span id="pomomins">25</span>:<span id="pomosecs">00</span></p>
-        <div id="pomocontainer2">
-          <button class="pomobuttontimer" id="pomobutton-start"><img src="./icons/start.svg" alt="pomostart" width="12px"></button>
-          <button class="pomobuttontimer" id="pomobutton-stop"><img src="./icons/stop.svg" alt="pomostart" width="12px"></button>
-          <button class="pomobuttontimer" id="pomobutton-reset"><img src="./icons/reset.svg" alt="pomostart" width="12px"></button>
-        </div>
+        <div class="timer">
+          <span class="timer__part timer__part--minutes">00</span>
+          <span class="timer__part">:</span>
+          <span class="timer__part timer__part--seconds">00</span>
+          <div id="pomobuttons">
+            <button type="button" id="startbutton" class="timer__btn timer__btn--control timer__btn--start">
+              <span class="material-icons">START</span>
+            </button>
+            <button type="button" id="startpomobutton" class="timer__btn timer__btn--reset">
+              <span class="material-icons">POMO</span>
+            </button>
+          </div>
+          </div>
       </div>
 
       <div class="navbox" id="c6">
-        <p class="timernum"><span id="hours">00</span> : <span id="mins">00</span> : <span id="secs">00</span></p>
+        <p class="timernum"><span id="hours">00</span><span class="doubledots">:</span><span id="mins">00</span><span class="doubledots">:</span><span id="secs">00</span></p>
         <div id="timercontainer">
           <button class="buttontimer" id="button-start"><img class="icons" src="./icons/start.svg" alt="start" width="12px"></button></button>
           <button class="buttontimer" id="button-stop"><img class="icons" src="./icons/stop.svg" alt="start" width="12px"></button></button>
@@ -45,9 +89,23 @@
         </div>
 
       </div>
-      <h1 class="navbox" id="c7">music player</h1>
+      <div class="navbox" id="c7">
+        <p>studbudlogo</p>>
+        <!-- lhs of music page -->
+        <div class="music-left">
+          <a href='index.html'>musicback</a>
+          <h2 id='connected-to'>Connected To</h2>
+          <p>spotifylogo</p>
+        </div>
+        <!-- rhs of music page -->
+        <div class="music-right">
+        <!-- iframe code from spotify -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id='music-player'></iframe>
+        </div>
+      </div>
     </nav>
-  <script src="script.js"></script>
+  <script src="timer.js"></script>
+  <script src="pomo.js"></script>
+  <script src="dictionary.js"></script>
   </body>
 </html>
-

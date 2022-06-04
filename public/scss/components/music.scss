@@ -1,0 +1,89 @@
+// container allows for flex positioning when screen size change
+.music-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+}
+
+// defining width of lhs
+.music-left {
+    width: 40%
+}
+
+/* defining properties of the right side */
+.music-right {
+    background-color: Black;
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.music-back-button{
+    width:6% !important;
+    left: 2% !important;
+}
+
+// music player positioning
+#music-player{
+    position: relative;
+    left: 12%;
+    width:80%;
+    height: 760;
+}
+
+// spotify logo
+#spotify-logo{
+    width: 24rem;
+    margin-top: 4%;
+    margin-left: 6%;
+}
+
+// styling text size and positioning
+#connected-to{
+    color: black !important;
+    font-size: 3.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-top: 55%;
+}
+
+// change to a stacked layout when screen reaches tablet size
+@media only screen and (max-width: 820px) {
+    .music-container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .music-left, .music-right {
+        width: 100%
+    }
+
+    #spotify-logo{
+        width: 10rem;
+        margin-top: 0%;
+        margin-left: 39%;
+        margin-bottom: 5%;
+    }
+    
+    #connected-to{
+        font-size: 2rem;
+        margin-top: 3%;
+    }
+
+    .music-right {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .music-back-button{
+        width:10% !important;
+        left: 3% !important;
+    }
+}
+
+// reposition spotify logo when reaches phone size
+@media only screen and (max-width: 414px) {
+    #spotify-logo{
+        margin-left: 30%;
+    }
+}
