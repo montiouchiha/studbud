@@ -48,12 +48,11 @@ volume.addEventListener("click", ()=>{
         volume.style.color = "#999";
     }, 800);
 });
-removeIcon.addEventListener("click", ()=>{
-    searchInput.value = "";
-    searchInput.focus();
-    wrapper.classList.remove("active");
-    infoText.style.color = "#9A9A9A";
-    infoText.innerHTML = "Type any existing word and press enter to get meaning, example, synonyms, etc.";
-});
+//button toggle for showing dictionary contents
+function hideDef() {
+    var x = document.getElementById("diccontents");
+    if (x.style.display === "none") x.style.display = "block";
+    else x.style.display = "none";
+}
 
 //# sourceMappingURL=index.129e2507.js.map

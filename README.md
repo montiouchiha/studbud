@@ -1,26 +1,29 @@
 # studbud
-advanced web project
+
+Advanced Web Design Project
+By Jordan Montgomery JMON7149
 
 Features:
 
-    Greeting:
+Timer and Date:
 
-    Covey Quadrants:
 
-    Dictionary:
+Timer:
 
-        Reference: https://www.codingnepalweb.com/build-dictionary-app-html-javascript/
+Covey Quadrants:
 
-    Pomodoro Timer:
+Dictionary:
+Reference: https://www.codingnepalweb.com/build-dictionary-app-html-javascript/
 
-        Instructions:
-        Minutes will have to be set with the 'set' button prior to use.
+Pomodoro Timer:
+Instructions:
+Minutes will have to be set with the 'set' button prior to use.
 
-    Timer:
+Timer:
 
-    Music Player: Spotfiy Link
+Music Player: Spotfiy Link
 
-    Task List: Rob's
+Task List: Rob's
 
 Further Improvements:
 

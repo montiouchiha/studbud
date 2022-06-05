@@ -16,7 +16,7 @@
           <object id="logo"><img src="/studbudlogo.a2803b20.svg" alt="studbudlogo" width="250px"></object>
       </div>
 
-      <h1 class="navbox" id="c2"><p>Good morning Jordan, it is Monday the 25th of April</p></h1>
+      <h1 class="navbox" id="c2"><p>Welcome :)</p><p><span id="datetime"></span></p></h1>
 
       <div class="navbox" id="c3">
         <button id="coveybutton" type="button"><img id="coveyimage" src="/coveybuttonon.7474a617.svg" width="60%"></button>
@@ -24,44 +24,50 @@
 
       <div class="navbox" id="c4">
         <div class="wrapper">
-          <header>English Dictionary</header>
           <div class="search">
             <input type="text" placeholder="Search a word" required="" spellcheck="false">
             <i class="fas fa-search"></i>
-            <span class="material-icons">close</span>
+            <!-- Hide dictionary contents -->
+            <button class="material-icons" onclick="hideDef()">close</button>
           </div>
-          <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
-          <ul>
-            <li class="word">
-              <div class="details">
-                <p>__</p>
-                <span>_ _</span>
+
+          <div id="diccontents">
+            <p class="info-text">Search word for dictionary definition + more.</p>
+            <ul>
+              <li class="word">
+                <div class="details">
+                  <p>__</p>
+                  <span>_ _</span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+              </li>
+              <div class="content">
+                <li class="meaning">
+                  <div class="details">
+                    <p>Meaning</p>
+                    <span>___</span>
+                  </div>
+                </li>
+                <li class="example">
+                  <div class="details">
+                    <p>Example</p>
+                    <span>___</span>
+                  </div>
+                </li>
+                <li class="synonyms">
+                  <div class="details">
+                    <p>Synonyms</p>
+                    <div class="list"></div>
+                  </div>
+                </li>
               </div>
-              <i class="fas fa-volume-up"></i>
-            </li>
-            <div class="content">
-              <li class="meaning">
-                <div class="details">
-                  <p>Meaning</p>
-                  <span>___</span>
-                </div>
-              </li>
-              <li class="example">
-                <div class="details">
-                  <p>Example</p>
-                  <span>___</span>
-                </div>
-              </li>
-              <li class="synonyms">
-                <div class="details">
-                  <p>Synonyms</p>
-                  <div class="list"></div>
-                </div>
-              </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
-    
+        <!-- hides dictionary contents-->
+        <script type="text/javascript">document.getElementById('diccontents').style.display = 'none';
+
+</script>
       </div>
 
       <div class="navbox" id="c5">
@@ -87,21 +93,10 @@
           <button class="buttontimer" id="button-stop"><img class="icons" src="/stop.9e7a4aae.svg" alt="start" width="12px"></button>
           <button class="buttontimer" id="button-reset"><img class="icons" src="/reset.f11cdbb7.svg" alt="start" width="12px"></button>
         </div>
-
       </div>
+
       <div class="navbox" id="c7">
-        <p>studbudlogo</p>>
-        <!-- lhs of music page -->
-        <div class="music-left">
-          <a href="/index.html">musicback</a>
-          <h2 id="connected-to">Connected To</h2>
-          <p>spotifylogo</p>
-        </div>
-        <!-- rhs of music page -->
-        <div class="music-right">
-        <!-- iframe code from spotify -->
-        <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id="music-player"></iframe>
-        </div>
+        <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id="music-player"></iframe>
       </div>
     </nav>
     
@@ -141,9 +136,11 @@
       <ul id="tasklist">
       </ul>
     </div>
+
   <script src="/index.f565f920.js"></script>
   <script src="/index.1bd03311.js"></script>
   <script src="/index.129e2507.js"></script>
   <script src="/index.41066c75.js"></script>
+  <script src="/index.8fda5ff6.js"></script>
   </body>
 </html>
