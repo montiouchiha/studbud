@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -9,30 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="/index.c74267d1.css" rel="stylesheet" type="text/css">
   </head>
+
   <body>
+
+    <!--Navigation Bar-->
     <nav class="navbar">
 
+      <!--logo-->
       <div class="navbox" id="c1">
           <object id="logo"><img src="/studbudlogo.a2803b20.svg" alt="studbudlogo" width="250px"></object>
       </div>
 
-      <h1 class="navbox" id="c2"><p>Welcome :)</p><p><span id="datetime"></span></p></h1>
+      <!--Welcome + date-->
+      <div class="navbox" id="c2">
+        <div id="greeting">
+          <p>Welcome!<span id="show"></span></p><p><span id="datetime"></span></p>
+        </div>
+      </div>
 
+      <!--Covey Quadrants-->
       <div class="navbox" id="c3">
         <button id="coveybutton" type="button"><img id="coveyimage" src="/coveybuttonon.7474a617.svg" width="60%"></button>
       </div>
 
-      <div class="navbox" id="c4">
+      <!--Dictionary-->
+      <div class="navboxdic" id="c4">
         <div class="wrapper">
-          <div class="search">
-            <input type="text" placeholder="Search a word" required="" spellcheck="false">
-            <i class="fas fa-search"></i>
-            <!-- Hide dictionary contents -->
-            <button class="material-icons" onclick="hideDef()">close</button>
-          </div>
+          <p class="info-text">Definition + Synonym</p>
+          <div class="search" id="searchboxes">
+            <input id="wordsearch" type="text" placeholder="Search a word" required="" spellcheck="false">
+            
 
+            <!-- Open and Close Dictionary Contents -->
+            <button id="showhide" class="material-icons" onclick="hideDef()">SHOW/HIDE</button>
+          </div>
           <div id="diccontents">
-            <p class="info-text">Search word for dictionary definition + more.</p>
+            <br>
             <ul>
               <li class="word">
                 <div class="details">
@@ -62,14 +75,17 @@
                 </li>
               </div>
             </ul>
+            <div id="bottomline"></div>
           </div>
         </div>
+
         <!-- hides dictionary contents-->
         <script type="text/javascript">document.getElementById('diccontents').style.display = 'none';
 
 </script>
       </div>
 
+      <!--Pomodoro Timer-->
       <div class="navbox" id="c5">
         <div class="timer">
           <span class="timer__part timer__part--minutes">00</span>
@@ -83,9 +99,10 @@
               <span class="material-icons">POMO</span>
             </button>
           </div>
-          </div>
+        </div>
       </div>
 
+      <!--Timer-->
       <div class="navbox" id="c6">
         <p class="timernum"><span id="hours">00</span><span class="doubledots">:</span><span id="mins">00</span><span class="doubledots">:</span><span id="secs">00</span></p>
         <div id="timercontainer">
@@ -95,11 +112,17 @@
         </div>
       </div>
 
+      <!--Music Player, Spotify API-->
       <div class="navbox" id="c7">
-        <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id="music-player"></iframe>
+        <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id="" music-player=""></iframe>
       </div>
     </nav>
     
+    <br>
+    <br>
+    <br>
+
+    <!--Task List-->
     <div id="task">
       <form id="taskform">
         <label for="task">Task:</label>
@@ -137,10 +160,26 @@
       </ul>
     </div>
 
+    <!-- Pop Up Msg -->
+    <div class="bg-modal">
+      <div class="modal-contents">
+       <h1 id="firstmsg">Welcome to <br><img src="/studbudlogo.a2803b20.svg" alt="studbudlogopopup" width="200px"></h1>
+        <div id="nameandsubmit">
+          <input id="namesubmit" type="text" placeholder="Name">
+          <a href="#" class="popupsubmitbutton">SUBMIT</a>
+        </div>   
+      </div>
+      <script type="text/javascript">document.querySelector('.bg-modal').style.display = "flex";
+
+</script>
+    </div>
+
   <script src="/index.f565f920.js"></script>
   <script src="/index.1bd03311.js"></script>
   <script src="/index.129e2507.js"></script>
   <script src="/index.41066c75.js"></script>
   <script src="/index.8fda5ff6.js"></script>
+  <script src="/index.1728bba5.js"></script>
+
   </body>
 </html>

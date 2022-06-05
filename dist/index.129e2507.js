@@ -29,7 +29,7 @@ function search(word) {
 function fetchApi(word) {
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
-    infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
+    infoText.innerHTML = `Press SHOW/HIDE to reveal results of <span>"${word}"</span>`;
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url).then((response)=>response.json()
     ).then((result)=>data(result, word)

@@ -131,9 +131,137 @@ h1 {
   background: #f5f5f5;
 }
 
+.info-text {
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+
+.search {
+  text-align: center;
+  border-top: 1px solid #000;
+  grid-template-columns: 3fr 1fr;
+  gap: 0;
+  display: grid;
+}
+
+#showhide {
+  background: none;
+  border-top: none;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: none;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+#showhide:hover {
+  background: #f5f5f5;
+}
+
+#wordsearch {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-left: 10px;
+}
+
+#bottomline {
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 414px) {
+  #spotify-logo {
+    margin-left: 30%;
+  }
+}
+
+#greeting {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.hero {
+  height: 420px;
+  width: 100%;
+  text-align: center;
+  background-image: url("http://richardmiddleton.me/modal-hero.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.popupsubmitbutton {
+  background: none;
+  border: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.popupsubmitbutton:hover {
+  background: #f5f5f5;
+}
+
+.card-container {
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  display: flex;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  bottom: 100px;
+}
+
+.modal-contents {
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: relative;
+}
+
+#nameandsubmit {
+  text-align: center;
+  border-top: 1px solid #000;
+  grid-template-columns: 3fr 1fr;
+  gap: 0;
+  margin-top: 35px;
+  display: grid;
+}
+
+#namesubmit {
+  padding: none;
+  border: none;
+  border-right: 1px solid #000;
+  padding-left: 10px;
+}
+
+.popupsubmitbutton {
+  color: #000;
+}
+
+.popupsubmitbutton:link, .popupsubmitbutton:visited, .popupsubmitbutton:hover, .popupsubmitbutton:active {
+  text-decoration: none;
+}
+
+#firstmsg {
+  padding-top: 15px;
+}
+
 .navbar {
   border: 0;
   grid-template-columns: 2.5fr 3fr 1fr 3fr 1.5fr 2fr 3fr;
+  align-items: flex-start;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -142,28 +270,50 @@ h1 {
 
 .navbox {
   text-align: center;
+  height: 112px;
   margin: 0;
   padding: 0;
 }
 
-#c1, #c2, #c3, #c4, #c5 {
+#navboxdic {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#c1, #c2, #c3 {
   float: center;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
 }
 
+#c4 {
+  float: center;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#c5 {
+  min-width: 150px;
+  float: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
 #c6 {
   float: center;
-  border: 1px solid #000;
-  border-right: 0;
-  margin: 0;
-  padding: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 #c7 {
   float: center;
+  background: #121212;
   border: 1px solid #000;
+  padding-top: 10px;
 }
 
 * {

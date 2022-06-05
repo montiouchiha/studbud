@@ -5,14 +5,23 @@
     margin: 0;
     padding: 0;
     border: 0;
+    align-items: flex-start
 }
 
 .navbox {
     padding: 0;
     margin: 0;
     text-align: center;
+    height: 112px;
 }
 
+#navboxdic {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+//logo
 #c1 {
     float: center;
     border-left: 1px solid black;
@@ -20,6 +29,7 @@
     border-bottom: 1px solid black;
 }
 
+//welcome + date
 #c2 {
     float: center;
     border-left: 1px solid black;
@@ -27,6 +37,8 @@
     border-bottom: 1px solid black;
 }
 
+
+//covey
 #c3 {
     float: center;
     border-left: 1px solid black;
@@ -34,34 +46,38 @@
     border-bottom: 1px solid black;
 }
 
+
+//dictionary
 #c4 {
     float: center;
     border-left: 1px solid black;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
+//pomodoro
 #c5 {
+    min-width: 150px;
     float: center;
-    border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
+//timer
 #c6 {
     float: center;
-    padding: 0;
-    border: 0;
-    margin: 0;
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
+//spotify
 #c7 {
     float: center;
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+    background: #121212;
+    padding-top: 10px;
 }
