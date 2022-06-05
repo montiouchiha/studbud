@@ -1,4 +1,4 @@
-//Timer
+//Pomodoro Timer
 
 class Timer {
     constructor(root) {
