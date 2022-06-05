@@ -1,5 +1,5 @@
 const wrapper = document.querySelector(".wrapper"), searchInput = wrapper.querySelector("input"), infoText = wrapper.querySelector(".info-text"), synonyms = wrapper.querySelector(".synonyms .list");
-//finds 
+//else statement adds definition components
 function data(result, word) {
     if (result.title) infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>.`;
     else {
