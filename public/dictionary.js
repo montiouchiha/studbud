@@ -1,13 +1,12 @@
 const wrapper = document.querySelector(".wrapper"),
 searchInput = wrapper.querySelector("input"),
-volume = wrapper.querySelector(".word i"),
 infoText = wrapper.querySelector(".info-text"),
-synonyms = wrapper.querySelector(".synonyms .list"),
-removeIcon = wrapper.querySelector(".search span");
-let audio;
+synonyms = wrapper.querySelector(".synonyms .list");
+
+//finds 
 function data(result, word){
     if(result.title){
-        infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
+        infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>.`;
     }else{
         wrapper.classList.add("active");
         let definitions = result[0].meanings[0].definitions[0],
@@ -16,7 +15,8 @@ function data(result, word){
         document.querySelector(".word span").innerText = phontetics;
         document.querySelector(".meaning span").innerText = definitions.definition;
         document.querySelector(".example span").innerText = definitions.example;
-        audio = new Audio("https:" + result[0].phonetics[0].audio);
+
+        //if there is a synonym, the synonym section will be displayed.
         if(definitions.synonyms[0] == undefined){
             synonyms.parentElement.style.display = "none";
         }else{
@@ -30,36 +30,33 @@ function data(result, word){
         }
     }
 }
+
+//search function
 function search(word){
     fetchApi(word);
     searchInput.value = word;
 }
+
+//dictionary API, retrieves content from word searched
 function fetchApi(word){
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
-    infoText.innerHTML = `Press SHOW/HIDE to reveal results of <span>"${word}"</span>`;
+    infoText.innerHTML = `Press SHOW/HIDE to reveal results.`;
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url).then(response => response.json()).then(result => data(result, word)).catch(() =>{
-        infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
+        infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>.`;
     });
 }
+
+//searches word after user inputs enter
 searchInput.addEventListener("keyup", e =>{
     let word = e.target.value.replace(/\s+/g, ' ');
     if(e.key == "Enter" && word){
         fetchApi(word);
     }
 });
-volume.addEventListener("click", ()=>{
-    volume.style.color = "#4D59FB";
-    audio.play();
-    setTimeout(() =>{
-        volume.style.color = "#999";
-    }, 800);
-});
-
 
 //button toggle for showing dictionary contents
-
 function hideDef() {
     var x = document.getElementById("diccontents");
     if (x.style.display === "none") {

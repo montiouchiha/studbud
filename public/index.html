@@ -30,7 +30,7 @@
 
       <!--Covey Quadrants-->
       <div class="navbox" id="c3">
-        <button id="coveybutton" type = "button"><img id="coveyimage" src="./icons/coveybuttonon.svg" width="60%"></button>
+        <button id="coveybutton" type = "button" href="covey.html"><img id="coveyimage" src="./icons/coveybuttonon.svg" width="60px"></button>
       </div>
 
       <!--Dictionary-->
@@ -52,7 +52,6 @@
                   <p>__</p>
                   <span>_ _</span>
                 </div>
-                <i class="fas fa-volume-up"></i>
               </li>
               <div class="content">
                 <li class="meaning">
@@ -116,63 +115,62 @@
       <div class="navbox" id="c7">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id=""music-player></iframe>
       </div>
-    </nav>
-    
-    <br>
-    <br>
-    <br>
 
-    <!--Task List-->
-    <div id="task">
-      <form id="taskform">
-        <label for="task">Task:</label>
-        <input type="text" name="task" id="taskInput">
-  
-        <br>
-      <!-- Date input -->
-        <label for="dueDate">Due Date: </label>
-        <input type="date" name="dueDate" id="dueDateInput">
-        <br>
-      <!-- Time input -->
-      <label for="completionTime">Completion Time: </label>
-        <input type="time" name="completionTime" id="completionTimeInput">
-  
-        <br>
-  
-      <label for="estimatedTime">Estimated completion time (in mins):</label>
-      <input type="number" name="estimatedTime" id="estimatedTimeInput">
-      <!-- Priority -->
-      <br>
-  
-      <label for="priority">Task Priority:</label>
-      <select name="prority" id="priorityInput">
-        <option value="">Select one</option>
-        <option value="Low">Low</option>
-        <option value="Medium">Medium</option>
-        <option value="High">High</option>
-      </select>
-  
-      <br>
-  
-        <button type="submit">Submit</button>
-      </form>
-      <ul id="tasklist">
-      </ul>
-    </div>
+      <!--Task List-->
+      <div class="navbox" id="c8">
+        <div id="task">
+          <form id="taskform">
+            <label for="task">Task:</label>
+            <input type="text" name="task" id="taskInput">
 
-    <!-- Pop Up Msg -->
-    <div class="bg-modal">
-      <div class="modal-contents">
-       <h1 id="firstmsg">Welcome to <br><img src="./icons/studbudlogo.svg" alt="studbudlogopopup" width="200px"></h1>
-        <div id="nameandsubmit">
-          <input id="namesubmit" type="text" placeholder="Name">
-          <a href="#" class="popupsubmitbutton">SUBMIT</a>
-        </div>   
+            <br>
+          <!-- Date input -->
+            <label for="dueDate">Due Date: </label>
+            <input type="date" name="dueDate" id="dueDateInput">
+            <br>
+          <!-- Time input -->
+          <label for="completionTime">Completion Time: </label>
+            <input type="time" name="completionTime" id="completionTimeInput">
+
+            <br>
+
+          <label for="estimatedTime">Estimated completion time (in mins):</label>
+          <input type="number" name="estimatedTime" id="estimatedTimeInput">
+          <!-- Priority -->
+          <br>
+
+          <label for="priority">Task Priority:</label>
+          <select name="prority" id="priorityInput">
+            <option value="">Select one</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <br>
+
+            <button type="submit">Submit</button>
+          </form>
+          <ul id="tasklist">
+          </ul>
+        </div>
       </div>
-      <script type="text/javascript">
-        document.querySelector('.bg-modal').style.display = "flex";
-      </script>
-    </div>
+  </nav>
+
+      <!-- Pop Up Msg -->
+      <div class="bg-modal">
+        <div class="modal-contents">
+          <h1 id="firstmsg">Welcome to <br><img src="./icons/studbudlogo.svg" alt="studbudlogopopup" width="200px"></h1>
+          <div id="nameandsubmit">
+            <input id="namesubmit" type="text" placeholder="Name">
+            <a href="#" class="popupsubmitbutton">SUBMIT</a>
+          </div>   
+        </div>
+        <script type="text/javascript">
+          document.querySelector('.bg-modal').style.display = "flex";
+        </script>
+      </div>
+   
 
   <script src="timer.js"></script>
   <script src="pomo.js"></script>

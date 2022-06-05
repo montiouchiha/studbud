@@ -1,11 +1,38 @@
 .navbar {
     display: grid;
     grid-template-columns: 2.5fr 3fr 1fr 3fr 1.5fr 2fr 3fr;
+    grid-template-rows: 1fr 5fr;
     gap: 0em;
     margin: 0;
     padding: 0;
     border: 0;
     align-items: flex-start
+}
+
+@media screen and (max-width: 1800px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0em;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        align-items: flex-start
+    }
+  }
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0em;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        align-items: flex-start
+    }
 }
 
 .navbox {
@@ -27,12 +54,12 @@
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
 //welcome + date
 #c2 {
     float: center;
-    border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -80,4 +107,14 @@
     border-right: 1px solid black;
     background: #121212;
     padding-top: 10px;
+}
+
+//task list
+#c8 {
+    padding: 25px;
+    float: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    min-height: 200px;
 }
